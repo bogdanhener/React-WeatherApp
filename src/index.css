@@ -13,15 +13,19 @@ body{
   background-position: bottom;
   transition: 0.4s ease-out;
 }
+.app.spring{
+  background-image: url(./assets/spring.jpg);
+}
 .app.summer{
   background-image: url(./assets/summer.jpg);
 }
-.app.spring{
-  background-image: url(./assets/spring.jpg);
+.app.autumn{
+  background-image: url(./assets/autumn.jpg); 
 }
 .app.winter{
   background-image: url(./assets/winter.jpg);
 }
+
 main{
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0,0,0, 0.2), rgba(0,0,0, 0.75));
@@ -100,4 +104,25 @@ main{
   font-size: 48px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+@media screen and (min-width: 1024px){
+  .app{
+    background-image: url(./assets/main-lg.jpg);    
+  }
+  .app.spring{
+    background-image: url(./assets/spring-lg.jpg); 
+  }
+  .app.summer{
+    background-image: url(./assets/summer-lg.jpg); 
+  }
+  .app.autumn{
+    background-image: url(./assets/autumn-lg.jpg); 
+  }
+  .app.winter{
+    background-image: url(./assets/winter-lg.jpg); 
+  }
+  main{
+    background-image: linear-gradient(to bottom, rgba(0,0,0, 0.2), rgba(0,0,0, 0.5));
+  }
 }
